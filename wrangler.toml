@@ -7,14 +7,6 @@ name = "flttt"
 route = "flttt.demo-fltt.workers.dev/*"
 zone_id = ""
 
-[build]
-command = ""
-
-[build.upload]
-format = "modules"
-main = "./src/worker.js"
-
-[[build.upload.rules]]
-type = "CompiledContentType"
-globs = ["**/*.html", "**/*.css", "**/*.js", "**/*.json", "**/*.png", "**/*.jpg", "**/*.gif", "**/*.svg", "**/*.ico", "**/*.woff", "**/*.woff2", "**/*.ttf", "**/*.otf", "**/*.eot"]
-fallthrough = true
+[[routes]]
+pattern = "flttt.demo-fltt.workers.dev/*"
+zone_name = ""
