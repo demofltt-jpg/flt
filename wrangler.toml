@@ -1,12 +1,3 @@
 name = "flttt"
 main = "src/worker.js"
 compatibility_date = "2025-11-30"
-
-[env.production]
-name = "flttt"
-route = "flttt.demo-fltt.workers.dev/*"
-zone_id = ""
-
-[[routes]]
-pattern = "flttt.demo-fltt.workers.dev/*"
-zone_name = ""
